@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+section{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #8A2387,#E94057,#F27121);
+    overflow: hidden;
+}
+section > button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    padding: 10px 32px;
+    border: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background: linear-gradient(to right, #FDFC47,#24FE41);
+    outline: none;
+    
+}
+section > button:hover{
+    box-shadow: 5px 5px 14px rgba(17, 17, 17, 0.8);
+    cursor: pointer;
+}
+#modal{
+    width: 35%;
+    height: 45%;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(to right,#6441A5,#2a0845);
+    border-radius: 3px;
+    transition: all ease-in-out 0.3s;
+    padding: 15px;
+}
+#modal h1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+#cross{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: rgb(223, 16, 16);
+    color: #fff;
+}
+#cross:hover{
+    cursor: pointer;
+    background-color: rgb(250, 36, 36);
+}
